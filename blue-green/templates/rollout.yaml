@@ -17,7 +17,7 @@ spec:
   strategy:
     blueGreen:
       activeService: {{ template "helm-guestbook.fullname" . }}      
-      autoPromotionEnabled: true
+      autoPromotionEnabled: false
   template:
     metadata:
       labels:
