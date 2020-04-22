@@ -16,8 +16,7 @@ spec:
       release: {{ .Release.Name }}
   strategy:
     blueGreen:
-      activeService: {{ template "helm-guestbook.fullname" . }}
-      previewService: {{ template "helm-guestbook.fullname" . }}-preview
+      activeService: {{ template "helm-guestbook.fullname" . }}      
       autoPromotionEnabled: true
   template:
     metadata:
